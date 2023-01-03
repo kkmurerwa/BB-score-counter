@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BBScoreCounter</string>
+    <string name="team_a_label">Team A</string>
+    <string name="team_b_label">Team B</string>
+    <string name="beginning_score">0</string>
+    <string name="plus_1">+1</string>
+    <string name="plus_2">+2</string>
+    <string name="plus_3">+3</string>
 </resources>

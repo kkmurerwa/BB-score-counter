@@ -7,13 +7,136 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layout_team_a"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/layout_team_b"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_team_a_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:text="@string/team_a_label" />
+
+        <TextView
+            android:id="@+id/text_score_team_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/beginning_score" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_1pt_to_team_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_1"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:height="80dp"
+            android:backgroundTint="@android:color/holo_red_light"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_2pts_to_team_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_2"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:height="80dp"
+            android:backgroundTint="@android:color/holo_red_light"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_3pts_to_team_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_3"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:height="80dp"
+            android:backgroundTint="@android:color/holo_red_light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_team_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layout_team_a"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_team_b_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="@string/team_b_label" />
+
+        <TextView
+            android:id="@+id/text_score_team_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/beginning_score" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_1pt_to_team_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_1"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:height="80dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_2pts_to_team_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_2"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:height="80dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_3pts_to_team_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_3"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:height="80dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
