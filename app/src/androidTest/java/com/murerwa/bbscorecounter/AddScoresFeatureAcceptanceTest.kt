@@ -2,6 +2,7 @@ package com.murerwa.bbscorecounter
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.adevinta.android.barista.assertion.BaristaVisibilityAssertions.assertDisplayed
+import com.murerwa.bbscorecounter.utils.BaseUITest
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith

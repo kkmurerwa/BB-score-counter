@@ -1,9 +1,10 @@
-package com.murerwa.bbscorecounter
+package com.murerwa.bbscorecounter.utils
 
 import android.view.View
 import android.view.ViewGroup
+import androidx.test.ext.junit.rules.activityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.rule.ActivityTestRule
+import com.murerwa.bbscorecounter.MainActivity
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
@@ -12,9 +13,8 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 open class BaseUITest {
-
-    val activityRule = ActivityTestRule(MainActivity::class.java)
-        @Rule get
+    @get:Rule
+    val rule = activityScenarioRule<MainActivity>()
 
 //    @Before
 //    fun setup() {
